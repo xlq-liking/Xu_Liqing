@@ -1,0 +1,215 @@
+/* tech模块 */
+
+.tech {
+    height: 500px;
+    padding-top: 50px;
+}
+
+
+/* tech模块左侧 */
+
+.tech_left {
+    float: left;
+    width: 700px;
+    height: 450px;
+}
+
+.tech_left .mod_title {
+    margin-top: 0;
+}
+
+.tech_left .left_top .pic_box {
+    float: left;
+    width: 320px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.tech_left .left_top .hover_pic {
+    float: left;
+    width: 320px;
+    height: 200px;
+    background: url(../图片资源/other/personWidthVr.png);
+    background-size: cover;
+}
+
+.tech_left .left_top .detailed {
+    float: left;
+    width: 330px;
+    height: 200px;
+    margin-left: 40px;
+}
+
+
+/* 多行文本省略 */
+
+.tech_left .left_top .detailed p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tech_left .left_top .detailed .people:hover {
+    color: #e3702f;
+}
+
+.tech_left .left_top .detailed h3 {
+    margin-top: 20PX;
+    margin-bottom: 10PX;
+}
+
+.tech_left .left_top .detailed .people,
+.tech_left .left_top .detailed .dat {
+    float: left;
+    color: #a4a4a4;
+    margin-right: 15px;
+}
+
+.tech_left .left_top .detailed p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+/* flex布局 */
+
+.tech_left .left_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 700px;
+    height: 190px;
+    margin-top: 20px;
+}
+
+.tech_left .left_bottom>div {
+    width: 345px;
+    height: 80px;
+}
+
+.tech_left .left_bottom>div .pic_box,
+.tech_left .left_bottom>div .pic {
+    float: left;
+    width: 140px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.tech_left .left_bottom>div .detailed h5 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.tech_left .left_bottom .small_pic1 .pic:nth-child(1) {
+    background: url(../图片资源/LIFESTYLE/VR.png);
+    background-size: cover;
+}
+
+.tech_left .left_bottom .small_pic2 .pic:nth-child(1) {
+    background: url(../图片资源/other/painting.png);
+    background-size: cover;
+}
+
+.tech_left .left_bottom .small_pic3 .pic:nth-child(1) {
+    background: url(../图片资源/silder4378-1/astronaut.png);
+    background-size: cover;
+}
+
+.tech_left .left_bottom .small_pic4 .pic:nth-child(1) {
+    background: url(../图片资源/silder4378-1/sing.png);
+    background-size: cover;
+}
+
+
+/* tech模块右侧 */
+
+.tech_right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    float: right;
+    width: 300px;
+    height: 450px;
+}
+
+.tech_right>div {
+    position: relative;
+    width: 300px;
+    height: 85px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.tech_right>div::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 300px;
+    height: 85px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .4);
+    transition: all 1s;
+}
+
+
+/* 鼠标经过盒子变大 */
+
+.tech_right>div:hover {
+    transform: scale(1.05);
+}
+
+.tech_right>div p {
+    text-align: center;
+    line-height: 85px;
+}
+
+.tech_right>div h5 {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+}
+
+.tech_right>div .left {
+    left: 20px;
+    top: 35px;
+}
+
+.tech_right>div .right {
+    right: 20px;
+    top: 35px;
+}
+
+.tech_right .box1 {
+    background: url(../图片资源/LIFESTYLE/exercise.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.tech_right .box2 {
+    background: url(../图片资源/LIFESTYLE/sit.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.tech_right .box3 {
+    background: url(../图片资源/LIFESTYLE/jigoerr345.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.tech_right .box4 {
+    background: url(../图片资源/LIFESTYLE/colorful.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.tech_right .box5 {
+    background: url(../图片资源/other/personWidthVr.png);
+    background-size: cover;
+    background-position: center;
+}

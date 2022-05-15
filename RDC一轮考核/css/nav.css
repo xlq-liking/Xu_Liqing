@@ -1,0 +1,603 @@
+/* 头部导航栏区域 */
+
+.nav_top {
+    height: 30px;
+    background-color: #f5f5f5;
+    line-height: 30px;
+}
+
+.nav_top .w .b::before {
+    content: "\e9b5";
+    font-family: icomoon;
+    font-size: 10px;
+    color: #ea5828;
+    margin-right: 5px;
+}
+
+.nav_top .content,
+.nav_top .line {
+    float: left;
+    font-size: 12px;
+}
+
+.nav_top .line {
+    width: 1.5px;
+    height: 16px;
+    background-color: #dddbdb;
+    margin: 6px 15px 7px 10px;
+}
+
+.nav_top .calendar {
+    float: right;
+    color: #777777;
+    font-size: 13px;
+}
+
+
+/* 利用伪元素添加图标 */
+
+.nav_top .calendar::before {
+    content: "\e953";
+    font-family: icomoon;
+    font-size: 10px;
+    color: #777777;
+    margin-right: 5px;
+}
+
+.nav_middle {
+    height: 120px;
+    /* 防止父元素外边距合并 */
+    border-top: 1px solid #fff;
+}
+
+.nav_middle .logo {
+    float: left;
+    width: 236px;
+    height: 36px;
+    margin-top: 42px;
+    background: url(../图片资源/头部/logo.png) no-repeat;
+}
+
+.nav_middle .pic {
+    float: right;
+    width: 600px;
+    height: 75px;
+    background: url(../图片资源/头部/img_phone.png) no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+
+/* 菜单栏样式 */
+
+.nav_bottom {
+    height: 50px;
+    /* 菜单栏背景颜色渐变效果 */
+    background: linear-gradient(to right, #e7576f, #ef854e);
+    margin-bottom: 20px;
+}
+
+
+/* 当滚动到一定距离,利用js修改类名为fixed实现底部导航位置固定 */
+
+.fixed {
+    /* 利用js动态改变菜单栏的位置是否固定 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 使菜单栏不被其他区域遮挡 */
+    z-index: 999;
+}
+
+.nav_bottom .menu {
+    float: left;
+}
+
+.nav_bottom .menu li {
+    position: relative;
+    float: left;
+    padding: 0 15px;
+    font-size: 10px;
+    color: #fff;
+    line-height: 50px;
+}
+
+.nav_bottom .menu li a {
+    color: #fff;
+}
+
+
+/* 利用伪元素添加菜单栏样式 */
+
+.nav_bottom .menu li::before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 18px;
+    content: "";
+    width: 1.5px;
+    height: 15px;
+    background-color: #ee897f;
+}
+
+.nav_bottom .menu .menu_name::after {
+    content: "\e900";
+    font-family: icomoon;
+    color: #fff;
+    z-index: 10;
+}
+
+
+/* 第一个菜单栏隐藏元素 */
+
+.nav_bottom .menu li .hidden1 {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 200px;
+    height: 120px;
+    background-color: #eaeaea;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    /* 盒子添加阴影效果 */
+    box-shadow: 0 2px 2px #999999;
+    z-index: 99;
+}
+
+.nav_bottom .menu li .hidden1>div {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #d3d3d3;
+    padding-left: 15px;
+    color: #777777;
+}
+
+.nav_bottom .menu li .hidden1>div:hover {
+    color: #e26e38;
+    background-color: #fff;
+}
+
+
+/* 第二个菜单隐藏元素 */
+
+.nav_bottom .menu li .hidden2_box {
+    /* 鼠标经过利用js修改为flex布局 */
+    display: none;
+    justify-content: space-between;
+    position: absolute;
+    left: -81px;
+    top: 50px;
+    width: 1000px;
+    height: 220px;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    /* 盒子添加阴影效果 */
+    box-shadow: 0 2px 2px #999999;
+    z-index: 99;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_left {
+    float: left;
+    width: 150px;
+    height: 220px;
+    padding-top: 10px;
+    border-right: 2px solid #d3d3d3;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_left>div {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    color: #777777;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_left .hidden2_active {
+    background-color: #eaeaea;
+    color: #ea5828;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_left>div:hover {
+    background-color: #eaeaea;
+    color: #ea5828;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right {
+    float: left;
+    width: 850px;
+    height: 200px;
+    padding: 20px;
+    /* flex布局 */
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right2,
+.nav_bottom .menu li .hidden2_box .hidden2_right3,
+.nav_bottom .menu li .hidden2_box .hidden2_right4 {
+    display: none;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right .box {
+    width: 190px;
+    height: 170px;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right .pic_box,
+.nav_bottom .menu li .hidden2_box .hidden2_right .pic {
+    width: 190px;
+    height: 120px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.nav_bottom .menu .hidden2_right .box .detailed {
+    width: 190px;
+    height: 45px;
+    line-height: 15px;
+    font-size: 8px;
+    color: #000;
+    padding-top: 10px;
+    /* 多行文本省略 */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* 隐藏区域图片 */
+
+.nav_bottom .menu li .hidden2_box .hidden2_right1 .pic1 {
+    background: url(../图片资源/silder4378-1/jump.jpg);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right1 .pic2 {
+    background: url(../图片资源/silder4378-1/sing.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right1 .pic3 {
+    background: url(../图片资源/LIFESTYLE/light.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right1 .pic4 {
+    background: url(../图片资源/LIFESTYLE/exercise.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right2 .pic1 {
+    background: url(../图片资源/LIFESTYLE/light.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right2 .pic2 {
+    background: url(../图片资源/LIFESTYLE/sit.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right2 .pic3 {
+    background: url(../图片资源/LIFESTYLE/serf.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right2 .pic4 {
+    background: url(../图片资源/LIFESTYLE/exercise.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right3 .pic1 {
+    background: url(../图片资源/LIFESTYLE/colorful.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right3 .pic2 {
+    background: url(../图片资源/LIFESTYLE/pants.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right3 .pic3 {
+    background: url(../图片资源/LIFESTYLE/sandwich.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right3 .pic4 {
+    background: url(../图片资源/LIFESTYLE/VR.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right4 .pic1 {
+    background: url(../图片资源/LIFESTYLE/jigoerr345.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right4 .pic2 {
+    background: url(../图片资源/LIFESTYLE/exercise.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right4 .pic3 {
+    background: url(../图片资源/LIFESTYLE/food.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden2_box .hidden2_right4 .pic4 {
+    background: url(../图片资源/LIFESTYLE/VR.png);
+    background-size: cover;
+}
+
+
+/* 第四个菜单隐藏元素 */
+
+.nav_bottom .menu li .hidden4 {
+    display: none;
+    justify-content: space-between;
+    position: absolute;
+    left: -298px;
+    top: 50px;
+    width: 1000px;
+    height: 240px;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    padding: 15px;
+    /* 盒子添加阴影效果 */
+    box-shadow: 0 2px 2px #999999;
+    z-index: 99;
+}
+
+.nav_bottom .menu li .hidden4 .box {
+    width: 220px;
+    height: 220px;
+    border-radius: 5px;
+}
+
+.nav_bottom .menu li .hidden4 .pic_box {
+    width: 220px;
+    height: 150px;
+    border-radius: 5px;
+    line-height: 150px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.video {
+    width: 220px;
+    height: 150px;
+}
+
+
+/* 通过伪元素添加视频播放控件 */
+
+.video::after {
+    content: "\ea15";
+    font-family: icomoon;
+    font-size: 40px;
+    color: #fff;
+    z-index: 10;
+}
+
+.nav_bottom .menu .hidden4 .box .detailed {
+    width: 220px;
+    height: 50px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #000;
+    padding-top: 8px;
+    /* 多行文本省略 */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav_bottom .menu li .hidden4 .box .video1 {
+    background: url(../图片资源/silder4378-1/sing.png);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden4 .box .video2 {
+    background: url(../图片资源/VIDEO/pizza.jpg);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden4 .box .video3 {
+    background: url(../图片资源/VIDEO/runway.jpg);
+    background-size: cover;
+}
+
+.nav_bottom .menu li .hidden4 .box .video4 {
+    background: url(../图片资源/silder4378-1/jump.jpg);
+    background-size: cover;
+}
+
+
+/* 第六个菜单栏隐藏元素 */
+
+.hidden6 {
+    /* display: block; */
+    position: relative;
+}
+
+.hidden6_left_menu {
+    display: none;
+    position: absolute;
+    left: -15px;
+    top: 0;
+    width: 220px;
+    height: 160px;
+    background-color: #eaeaea;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    /* 盒子添加阴影效果 */
+    box-shadow: 0 2px 2px #999999;
+    z-index: 99;
+}
+
+.hidden6_left_menu>div {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #d3d3d3;
+    padding-left: 15px;
+    color: #777777;
+}
+
+.nav_bottom .menu li .hidden6 .hidden6_left_menu>div::after {
+    content: "\e906";
+    font-family: icomoon;
+    position: absolute;
+    right: 15px;
+}
+
+
+/* 鼠标经过背景颜色改变 */
+
+.hidden6_right>div:hover,
+.hidden6_left_menu>div:hover {
+    color: #fff;
+    background-color: #e26e38;
+}
+
+
+/* 菜单一二共有样式 */
+
+.hidden6_right1,
+.hidden6_right2 {
+    display: none;
+    width: 220px;
+    height: 80px;
+    background-color: #eaeaea;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    box-shadow: 0 2px 2px #999999;
+}
+
+
+/* 菜单一子菜单 */
+
+.hidden6_right1 {
+    position: absolute;
+    left: 204px;
+    top: 0;
+    z-index: 99;
+}
+
+.hidden6_right1>div,
+.hidden6_right2>div,
+.hidden6_right3>div,
+.hidden6_right4>div {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #d3d3d3;
+    padding-left: 15px;
+    color: #777777;
+}
+
+
+/* 菜单二子菜单 */
+
+.hidden6_right2 {
+    position: absolute;
+    left: 205px;
+    top: 40px;
+    z-index: 99;
+}
+
+
+/* 菜单三四共有样式 */
+
+.hidden6_right3,
+.hidden6_right4 {
+    display: none;
+    width: 220px;
+    height: 120px;
+    background-color: #eaeaea;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    box-shadow: 0 2px 2px #999999;
+    z-index: 99;
+}
+
+
+/* 菜单三子菜单 */
+
+.hidden6_right3 {
+    position: absolute;
+    left: 205px;
+    top: 80px;
+}
+
+
+/* 菜单四子菜单 */
+
+.hidden6_right4 {
+    position: absolute;
+    left: 205px;
+    top: 120px;
+}
+
+.nav_bottom .menu li:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.nav_bottom .icon {
+    float: right;
+    width: 180px;
+}
+
+.nav_bottom .icon_four {
+    float: left;
+    width: 130px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.nav_bottom .icon a::before {
+    float: left;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 20px 10px;
+    font-family: icomoon;
+    font-size: 10px;
+    color: #fff;
+}
+
+.nav_bottom .icon1::before {
+    content: "\ea90";
+}
+
+.nav_bottom .icon2::before {
+    content: "\ea94";
+}
+
+.nav_bottom .icon3::before {
+    content: "\e90f";
+}
+
+.nav_bottom .icon4::before {
+    content: "\eaca";
+}
+
+.nav_bottom .search {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .1);
+    border-left: 1px solid #f4a991;
+    border-right: 1px solid #f4a991;
+    padding-left: 10px;
+}
+
+.nav_bottom .search::before {
+    content: "\e986";
+}

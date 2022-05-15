@@ -1,0 +1,276 @@
+/* 底部模块 */
+
+.footer {
+    height: 620px;
+    background-color: #327df6;
+    margin-top: 100px;
+}
+
+.footer .footer_top {
+    height: 120px;
+    background: linear-gradient(to right, #e7576f, #ef854e);
+}
+
+.footer .footer_top .logo {
+    float: left;
+    width: 236px;
+    height: 36px;
+    margin-top: 46px;
+    background: url(../图片资源/other/logo-light.png) no-repeat;
+}
+
+.footer .footer_top .subscribe {
+    position: relative;
+    float: right;
+    width: 400px;
+    height: 45px;
+    margin-top: 40px;
+}
+
+
+/* 修改输入框样式 */
+
+.footer .footer_top .subscribe input {
+    float: left;
+    width: 260px;
+    height: 45px;
+    /* 取消输入框点击显示边框 */
+    outline: none;
+    border: 0;
+    padding-left: 35px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 8px 0 0 8px;
+    color: #fff;
+    cursor: text;
+}
+
+
+/* 输入框默认字体为白色 */
+
+.footer .footer_top .subscribe input::placeholder {
+    color: #fff;
+}
+
+
+/* 伪元素添加字体图标 */
+
+.footer .footer_top .subscribe::after {
+    content: "\e901";
+    font-family: icomoon;
+    font-size: 10px;
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    top: 16px;
+}
+
+
+/* 按钮样式 */
+
+.footer .footer_top button {
+    float: left;
+    border: 0;
+    width: 140px;
+    height: 45px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+}
+
+.footer .footer_top button:hover {
+    background-color: #e3702f;
+}
+
+.footer .footer_mid {
+    height: 420px;
+    padding-top: 50px;
+    color: #fff;
+    background-color: #222222;
+}
+
+.footer .footer_mid .left {
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 350px;
+}
+
+.footer .footer_mid .left p {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer .footer_mid .left>div {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.footer .footer_mid .left .line1 {
+    position: absolute;
+    left: 120px;
+    top: 13px;
+    width: 202px;
+    height: 1px;
+    background-color: #504f4f;
+}
+
+.footer .footer_mid .left .address::before {
+    content: "\e904";
+    font-family: icomoon;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.footer .footer_mid .left .tel::before {
+    content: "\e903";
+    font-family: icomoon;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.footer .footer_mid .left .letter::before {
+    content: "\e902";
+    font-family: icomoon;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.footer .footer_mid .left .five_icon {
+    margin-top: 40px;
+    height: 18px;
+}
+
+.footer .footer_mid .left .five_icon span {
+    margin-right: 25px;
+}
+
+.footer .footer_mid .left .five_icon .icon1::before {
+    content: "\ea90";
+    font-family: icomoon;
+    font-size: 18px;
+}
+
+.footer .footer_mid .left .five_icon .icon2::before {
+    content: "\ea94";
+    font-family: icomoon;
+    font-size: 18px;
+}
+
+.footer .footer_mid .left .five_icon .icon3::before {
+    content: "\ea9d";
+    font-family: icomoon;
+    font-size: 18px;
+}
+
+.footer .footer_mid .left .five_icon .icon4::before {
+    content: "\ea9b";
+    font-family: icomoon;
+    font-size: 18px;
+}
+
+.footer .footer_mid .left .five_icon .icon5::before {
+    content: "\eaca";
+    font-family: icomoon;
+    font-size: 18px;
+}
+
+.footer .footer_mid .center {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 370px;
+}
+
+.footer .footer_mid .center .line2 {
+    position: absolute;
+    left: 150px;
+    top: 13px;
+    width: 80px;
+    height: 1px;
+    background-color: #504f4f;
+}
+
+
+/* flex布局 */
+
+.footer .footer_mid .center .four_pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 300px;
+    height: 320px;
+    margin-top: 20px;
+}
+
+.footer .footer_mid .center .four_pic .box {
+    width: 300px;
+    height: 65px;
+    overflow: hidden;
+}
+
+.footer .footer_mid .center .four_pic .hover_box {
+    float: left;
+    width: 65px;
+    height: 65px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.footer .footer_mid .center .four_pic .pic {
+    width: 65px;
+    height: 65px;
+}
+
+.footer .footer_mid .center .four_pic .detailed {
+    float: left;
+    width: 215px;
+    height: 65px;
+    margin-left: 20px;
+}
+
+.footer .footer_mid .center .four_pic .detailed h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer .footer_mid .center .four_pic .pic1 {
+    background: url(../图片资源/silder4378-1/astronaut.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .footer_mid .center .four_pic .pic2 {
+    background: url(../图片资源/LIFESTYLE/food.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .footer_mid .center .four_pic .pic3 {
+    background: url(../图片资源/LIFESTYLE/VR.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .footer_mid .center .four_pic .pic4 {
+    background: url(../图片资源/LIFESTYLE/colorful.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .footer_mid .right {
+    float: right;
+    width: 220px;
+    height: 280px;
+    background: url(../图片资源/other/travel.jpg);
+    background-size: cover;
+}
+
+.footer .footer_bottom {
+    font-size: 12px;
+    height: 80px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+}

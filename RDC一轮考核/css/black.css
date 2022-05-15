@@ -1,0 +1,336 @@
+/* 黑色背景模块 */
+
+.black {
+    height: 500px;
+    padding-top: 50px;
+}
+
+.black .left {
+    float: left;
+    width: 650px;
+    height: 450px;
+    color: #fff;
+    background-color: #000;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.black .left .mod_title {
+    color: #fff;
+}
+
+.black .left .mod_title::before {
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+}
+
+.black .left .left_pic,
+.black .left .right_pic {
+    float: left;
+    width: 280px;
+    height: 370px;
+}
+
+.black .left .left_pic {
+    margin-right: 30px;
+}
+
+.black .left .left_pic .hover_box {
+    position: relative;
+    width: 280px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.black .left .left_pic .pic {
+    width: 280px;
+    height: 180px;
+    background: url(../图片资源/LIFESTYLE/pants.png) no-repeat;
+    background-size: cover;
+}
+
+.black .left .left_pic .pic_title {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.black .left .left_pic h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.black .left .left_pic p {
+    font-size: 10px;
+    margin-bottom: 20px;
+    /* 多行文本省略 */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.black .left .left_pic .people {
+    float: left;
+    color: #999999;
+    font-weight: bold;
+}
+
+.black .left .left_pic .people:hover {
+    color: #e3702f;
+}
+
+.black .left .left_pic .dat {
+    float: left;
+    color: #a3a3a3;
+    margin-left: 15px;
+}
+
+.black .left .right_pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.black .left .right_pic .hover_box {
+    width: 130px;
+    height: 140px;
+}
+
+.black .left .right_pic .hover_box .pic_box,
+.black .left .right_pic .hover_box .hover_pic {
+    width: 130px;
+    height: 90px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.black .left .right_pic .pic1 {
+    background: url(../图片资源/LIFESTYLE/colorful.png);
+    background-size: cover;
+}
+
+.black .left .right_pic .pic2 {
+    background: url(../图片资源/LIFESTYLE/light.png);
+    background-size: cover;
+}
+
+.black .left .right_pic .pic3 {
+    background: url(../图片资源/LIFESTYLE/exercise.png);
+    background-size: cover;
+}
+
+.black .left .right_pic .pic4 {
+    background: url(../图片资源/LIFESTYLE/food.png);
+    background-size: cover;
+}
+
+.black .left .right_pic .hover_box h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.black .left .right_pic .hover_box .dat {
+    color: #a3a3a3;
+}
+
+.black .right {
+    float: right;
+    width: 300px;
+    height: 450px;
+    background-color: #fff;
+}
+
+
+/* 黑色背景右侧轮播图菜单 */
+
+.black .right .loop_top div {
+    float: left;
+    margin-top: 0;
+}
+
+.black .right .loop_top .black_loop {
+    margin-right: 20px;
+}
+
+.black .right .loop_top .gray {
+    font-size: 15px;
+    font-weight: bold;
+    color: #d3d3d3;
+}
+
+.black .right .loop_top .gray::before {
+    content: "·";
+}
+
+.black .loop_bottom {
+    position: relative;
+    width: 300px;
+    height: 380px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.black .loop_bottom .black_box {
+    width: 900px;
+    height: 380px;
+    position: absolute;
+    left: 0;
+}
+
+.black .right .bottom_box {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 300px;
+    height: 380px;
+    /* margin-top: 10px; */
+}
+
+.black .right .bottom_box .box {
+    position: relative;
+    width: 300px;
+    height: 90px;
+}
+
+
+/* 黑色背景右侧轮播图 */
+
+.black .right .bottom_box div {
+    float: left;
+}
+
+.black .right .bottom_box .pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    margin-right: 10px;
+}
+
+
+/* 图片左上角标记 */
+
+.black .right .bottom_box .mark {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #ea5828;
+    color: #fff;
+    font-size: 8px;
+}
+
+
+/* 黑色背景右侧轮播一 */
+
+.black .right .bottom_box1 .pic1 {
+    background: url(../图片资源/silder4378-1/woman.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.black .right .bottom_box1 .pic2 {
+    background: url(../图片资源/LIFESTYLE/light.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.black .right .bottom_box1 .pic3 {
+    background: url(../图片资源/LIFESTYLE/exercise.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.black .right .bottom_box1 .pic4 {
+    background: url(../图片资源/LIFESTYLE/jigoerr345.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.black .right .bottom_box .box h5 {
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.black .right .bottom_box .dat {
+    color: #a4a4a4
+}
+
+
+/* 黑色背景右侧轮播二 */
+
+.black .right .bottom_box2 .pic1 {
+    background: url(../图片资源/LIFESTYLE/light.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.black .right .bottom_box2 .pic2 {
+    background: url(../图片资源/silder4378-1/woman.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.black .right .bottom_box2 .pic3 {
+    background: url(../图片资源/LIFESTYLE/jigoerr345.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.black .right .bottom_box2 .pic4 {
+    background: url(../图片资源/LIFESTYLE/exercise.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* 黑色背景右侧轮播三 */
+
+.black .right .bottom_box3 .pic1 {
+    background: url(../图片资源/silder4378-1/woman.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.black .right .bottom_box3 .pic2 {
+    background: url(../图片资源/LIFESTYLE/light.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.black .right .bottom_box3 .pic3 {
+    background: url(../图片资源/LIFESTYLE/exercise.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.black .right .bottom_box3 .pic4 {
+    background: url(../图片资源/LIFESTYLE/jigoerr345.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.black .right .bottom_box .box h5 {
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.black .right .bottom_box .dat {
+    color: #a4a4a4
+}
+
+.black .right .bottom_box .box h5 {
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.black .right .bottom_box .dat {
+    color: #a4a4a4
+}

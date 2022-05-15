@@ -1,0 +1,47 @@
+/* 红色图片区域 */
+
+.red_background {
+    height: 162px;
+}
+
+.red_background .box {
+    position: relative;
+    height: 162px;
+    background: url(../图片资源/other/red.png);
+    background-size: cover;
+    margin-top: 50px;
+    color: #fff;
+}
+
+
+/* 绝对定位 */
+
+.red_background .box h3 {
+    position: absolute;
+    left: 200px;
+    top: 60px;
+}
+
+.red_background .box button {
+    position: absolute;
+    left: 455px;
+    top: 70px;
+    width: 100px;
+    height: 30px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #da3a34;
+}
+
+.red_background .box h4 {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+
+.red_background .box h5 {
+    position: absolute;
+    right: 70px;
+    top: 70px;
+}

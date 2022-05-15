@@ -1,0 +1,72 @@
+/* 满屏图片模块 */
+
+.full_pic {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+
+/* 使用flex布局使背景图片各占页面宽度的四分之一 */
+
+.full_pic>div {
+    flex: 1;
+    position: relative;
+}
+
+.full_pic .translate_pic {
+    width: 100%;
+    /* 利用上内边距撑开 盒子高度 */
+    padding-top: 120%;
+}
+
+.full_pic .detailed {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #fff;
+    z-index: 1;
+}
+
+.full_pic .detailed .fashion_title {
+    margin-left: 10px;
+}
+
+.full_pic .detailed h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.full_pic .detailed .people,
+.full_pic .detailed .dat {
+    float: left;
+}
+
+.full_pic .detailed .dat {
+    margin-left: 20px;
+}
+
+.full_pic .box1 .translate_pic {
+    background: url(../图片资源/LIFESTYLE/colorful.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.full_pic .box2 .translate_pic {
+    background: url(../图片资源/LIFESTYLE/VR.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.full_pic .box3 .translate_pic {
+    background: url(../图片资源/LIFESTYLE/pants.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.full_pic .box4 .translate_pic {
+    background: url(../图片资源/silder4378-1/jump.jpg);
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,50 @@
+/* 加载更多小样式 */
+
+.load_more {
+    height: 40px;
+}
+
+.load_more .box {
+    width: 660px;
+    height: 40px;
+}
+
+.load_more .box div {
+    float: left;
+}
+
+.load_more .mid {
+    width: 140px;
+    height: 40px;
+    border: 2px solid #eaeaea;
+    line-height: 40px;
+    text-align: center;
+}
+
+.load_more .line_left,
+.load_more .line_right {
+    width: 260px;
+    height: 2px;
+    background-color: #eaeaea;
+    margin-top: 19px;
+}
+
+
+/* 听音乐模块 */
+
+.music {
+    position: relative;
+    height: 120px;
+}
+
+.music .box {
+    /* 利用绝对定位和左外边距使盒子居中对齐 */
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: 50px;
+    width: 800px;
+    height: 120px;
+    background: url(../图片资源/other/music.png);
+    background-size: cover;
+}

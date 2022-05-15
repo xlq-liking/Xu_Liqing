@@ -1,0 +1,107 @@
+/* 灰色背景模块 */
+
+.gray_background {
+    position: relative;
+    height: 400px;
+    padding-top: 50px;
+    background-color: #f7f7f7;
+    margin-top: 50px;
+}
+
+.gray_background .gray_loop {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+}
+
+.gray_background .gray_loop .gray_box {
+    position: absolute;
+    left: 0;
+    width: 2000px;
+    height: 260px;
+}
+
+.gray_background .gray_loop .gray_box .loop_box1,
+.gray_background .gray_loop .gray_box .loop_box2 {
+    float: left;
+    width: 1000px;
+    height: 260px;
+}
+
+.gray_background .gray_loop li {
+    float: left;
+    width: 230px;
+    height: 260px;
+    margin-right: 20px;
+}
+
+.gray_background .gray_loop .gray_box li>div {
+    position: relative;
+    width: 230px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gray_background .gray_loop .gray_box .hover_pic {
+    width: 230px;
+    height: 150px;
+}
+
+.gray_background .gray_loop .pic_title {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.gray_background .gray_loop .gray_box h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gray_background .gray_loop li .pic1 {
+    background: url(../图片资源/other/painting.png);
+    background-size: cover;
+}
+
+.gray_background .gray_loop li .pic2 {
+    background: url(../图片资源/LIFESTYLE/colorful.png);
+    background-size: cover;
+}
+
+.gray_background .gray_loop li .pic3 {
+    background: url(../图片资源/LIFESTYLE/blue.png);
+    background-size: cover;
+}
+
+.gray_background .gray_loop li .pic4 {
+    background: url(../图片资源/VIDEO/runway.jpg);
+    background-size: cover;
+}
+
+.gray_background .gray_loop li:nth-child(4) .tech_title {
+    left: 82px;
+}
+
+.gray_background .two_dot {
+    position: absolute;
+    /* 盒子水平居中 */
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 10px;
+}
+
+.gray_background .gray_active {
+    width: 16px;
+    background-color: #ea5828;
+}
+
+.gray_dot {
+    float: left;
+    margin-right: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #d3d3d3;
+}

@@ -1,0 +1,212 @@
+/* read next模块 */
+
+.read {
+    /* 解决外边距合并问题 */
+    overflow: hidden;
+    height: 730px;
+}
+
+.read .read_left {
+    float: left;
+    width: 660px;
+    height: 730px;
+}
+
+
+/* flex布局 */
+
+.read .read_left .four_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 660px;
+    height: 650px;
+}
+
+.read .read_left .four_box .box {
+    width: 320px;
+    height: 310px;
+}
+
+.read .read_left .four_box .box .pic_box {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.read .read_left .four_box .box .pic {
+    width: 100%;
+    height: 200px;
+}
+
+.read .read_left .four_box .box .pic_title {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.read .read_left .four_box .box h5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.read .read_left .people,
+.read .read_left .dat {
+    float: left;
+}
+
+.read .read_left .people {
+    margin-right: 10px;
+}
+
+.read .read_left .four_box .pic1 {
+    background: url(../图片资源/silder4378-1/astronaut.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.read .read_left .four_box .pic2 {
+    background: url(../图片资源/LIFESTYLE/food.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.read .read_left .four_box .pic3 {
+    background: url(../图片资源/silder4378-1/jump.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.read .read_left .four_box .pic4 {
+    background: url(../图片资源/LIFESTYLE/sandwich.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.read .read_right {
+    float: right;
+    width: 310px;
+    height: 730px;
+}
+
+.read .read_right .mod_title {
+    color: #000;
+}
+
+.read .read_right .mod_title::before {
+    border-top: 3px solid #000;
+    border-left: 3px solid #000;
+}
+
+
+/* 利用flex布局使头像和竖线在盒子内散开 */
+
+.read .read_right .comments_left {
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80px;
+    height: 570px;
+    margin-top: 50px;
+}
+
+
+/* 根据子元素的奇偶数来设置样式 */
+
+
+/* 奇数为头像盒子样式，偶数为竖线 */
+
+.read .read_right .comments_left div:nth-child(odd) {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.read .read_right .comments_left div:nth-child(even) {
+    width: 1px;
+    height: 110px;
+    background-color: #eaeaea;
+    margin-left: 39px;
+}
+
+.read .read_right .comments_left .face1 {
+    background: url(../图片资源/头像/face1.png);
+    background-size: cover;
+}
+
+.read .read_right .comments_left .face2 {
+    background: url(../图片资源/头像/face2.png);
+    background-size: cover;
+}
+
+.read .read_right .comments_left .face3 {
+    background: url(../图片资源/头像/face3.png);
+    background-size: cover;
+}
+
+
+/* flex布局 */
+
+.read .read_right .comments_right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    float: right;
+    width: 190px;
+    height: 700px;
+}
+
+.read .read_right .comments_right .comments {
+    position: relative;
+    width: 190px;
+    height: 180px;
+    padding-left: 20px;
+    padding-top: 25px;
+    border: 1px solid #eaeaea;
+}
+
+.read .read_right .comments_right .comments p {
+    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.read .read_right .comments_right .comments .gray {
+    font-size: 10px;
+}
+
+
+/* 利用伪元素实现三角效果 */
+
+
+/* 通过定位移到盒子左侧中部 */
+
+.read .read_right .comments_right .comments::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    /* 通过边框实现三角形 */
+    border: 10px solid transparent;
+    border-right: 10px solid #eaeaea;
+    position: absolute;
+    left: -21px;
+    top: 78px;
+}
+
+.read .read_right .comments_right .comments::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-right: 8px solid #fff;
+    position: absolute;
+    left: -16px;
+    top: 79px;
+}
